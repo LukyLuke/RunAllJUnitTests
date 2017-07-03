@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_GebeAF2KEeepOObRE_ZU8w">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5tnBcF2KEeepOObRE_ZU8w" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_7vzisF2KEeepOObRE_ZU8w" elementId="runallunittests.command.runallunittests.RunAll" commandName="Run All UnitTests" description="Run all UnitTests in all opened Projects"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zQhCMF2KEeepOObRE_ZU8w" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_1I3q8F2KEeepOObRE_ZU8w" elementId="runallunittests.handler.Menu" contributionURI="bundleclass://RunAllUnitTests/ch.ranta.eclipse.plugin.runallunittests.handler.RunAllHandler" command="_7vzisF2KEeepOObRE_ZU8w"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_HRggwF2KEeepOObRE_ZU8w" featurename="toolBarContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:ToolBarContribution" xmi:id="_RVDpUF2KEeepOObRE_ZU8w" elementId="runallunittests.toolbarcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:HandledToolItem" xmi:id="_U-3ooF2KEeepOObRE_ZU8w" elementId="runallunittests.handledtoolitem.runall" label="Run All" command="_7vzisF2KEeepOObRE_ZU8w"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Ph5NIF2LEeepOObRE_ZU8w" featurename="menuContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_WR_n8F2LEeepOObRE_ZU8w" elementId="runallunittests.menucontribution.0" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_bDH0oF2LEeepOObRE_ZU8w" elementId="runallunittests.menu.runall" label="Run All">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_c93DAF2LEeepOObRE_ZU8w" elementId="runallunittests.handledmenuitem.runallunittests" label="Run All UnitTests" tooltip="Run all UnitTetss in all opened Projects" command="_7vzisF2KEeepOObRE_ZU8w"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

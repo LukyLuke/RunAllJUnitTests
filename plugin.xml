@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="ch.ranta.eclipse.plugin.runallunittests.fragment"
+         name="%extension.name"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            apply="notexists"
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="ch.ranta.eclipse.plugin.runallunittests.expressions.FileTester"
+            id="ch.ranta.eclipse.plugin.runallunittests.expressions.resourceTester"
+            namespace="ch.ranta.eclipse.plugin.runallunittests"
+            properties="hasDefaultSupport"
+            type="org.eclipse.core.resources.IFile">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="ch.ranta.eclipse.plugin.runallunittests.Startup">
+      </startup>
+   </extension>
+
+</plugin>
