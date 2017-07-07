@@ -6,16 +6,9 @@
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zQhCMF2KEeepOObRE_ZU8w" featurename="handlers" parentElementId="xpath:/">
     <elements xsi:type="commands:Handler" xmi:id="_1I3q8F2KEeepOObRE_ZU8w" elementId="runallunittests.handler.Menu" contributionURI="bundleclass://RunAllUnitTests/ch.ranta.eclipse.plugin.runallunittests.handler.RunAllHandler" command="_7vzisF2KEeepOObRE_ZU8w"/>
   </fragments>
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_HRggwF2KEeepOObRE_ZU8w" featurename="toolBarContributions" parentElementId="xpath:/">
-    <elements xsi:type="menu:ToolBarContribution" xmi:id="_RVDpUF2KEeepOObRE_ZU8w" elementId="runallunittests.toolbarcontribution.0" parentId="org.eclipse.ui.main.toolbar">
-      <children xsi:type="menu:HandledToolItem" xmi:id="_U-3ooF2KEeepOObRE_ZU8w" elementId="runallunittests.handledtoolitem.runall" label="Run All" command="_7vzisF2KEeepOObRE_ZU8w"/>
-    </elements>
-  </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Ph5NIF2LEeepOObRE_ZU8w" featurename="menuContributions" parentElementId="xpath:/">
-    <elements xsi:type="menu:MenuContribution" xmi:id="_WR_n8F2LEeepOObRE_ZU8w" elementId="runallunittests.menucontribution.0" parentId="org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_bDH0oF2LEeepOObRE_ZU8w" elementId="runallunittests.menu.runall" label="Run All">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_c93DAF2LEeepOObRE_ZU8w" elementId="runallunittests.handledmenuitem.runallunittests" label="Run All UnitTests" tooltip="Run all UnitTetss in all opened Projects" command="_7vzisF2KEeepOObRE_ZU8w"/>
-      </children>
+    <elements xsi:type="menu:MenuContribution" xmi:id="_WR_n8F2LEeepOObRE_ZU8w" elementId="runallunittests.menucontribution.0" parentId="org.eclipse.ui.run">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_c93DAF2LEeepOObRE_ZU8w" elementId="runallunittests.handledmenuitem.runallunittests" label="Run All UnitTests" iconURI="platform:/plugin/RunAllUnitTests/icons/logo.gif" tooltip="Run all UnitTests in all opened Projects" command="_7vzisF2KEeepOObRE_ZU8w"/>
     </elements>
   </fragments>
 </fragment:ModelFragments>
